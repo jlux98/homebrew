@@ -1,0 +1,336 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HybrisHeapOfHomebrew",
+				"abbreviation": "HHH",
+				"full": "Hybris' Heap of Homebrew",
+				"version": "draft 1",
+				"authors": [
+					"Hybris",
+					"JLU"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Poisonous Shambling Mound",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 276,
+			"size": [
+				"L"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 110,
+				"formula": "13d10 + 39"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"deafened",
+				"exhaustion"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Poison Absorption",
+					"entries": [
+						"Whenever the shambling mound is subjected to Poison damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Poison damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shambling mound makes three Poisonous Tendril attacks. It can replace one attack with a use of Engulf."
+					]
+				},
+				{
+					"name": "Poisonous Tendril",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Bludgeoning damage plus 5 ({@damage 2d4}) Poison damage. If the target is a Medium or smaller creature, the shambling mound pulls the target 5 feet straight toward itself."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"{@actSave str} {@dc 15}, one Medium or smaller creature within 5 feet. {@actSaveFail} The target is pulled into the shambling mound's space and has the {@condition Grappled|XPHB} condition (escape {@dc 14}). Until the grapple ends, the target has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it takes 10 ({@damage 3d6}) Acid damage at the start of each of its turns. When the shambling mound moves, the {@condition Grappled|XPHB} target moves with it, costing it no extra movement. The shambling mound can have only one creature {@condition Grappled|XPHB} by this action at a time."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"token": {
+				"name": "Shambling Mound",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/shambling-mound.mp3"
+			},
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Shambling Mound",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Shambling Mound",
+						"entries": [
+							"{@i Manifestation of Primeval Power}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Forest|bestiary|environment=forest}, {@filter Swamp|bestiary|environment=swamp}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "None"
+									}
+								]
+							},
+							"Shambling mounds—also known as \"shamblers\"—embody the tenacity of the wilderness, seeking only to consume and grow. These masses of vegetation rise up to half again as tall as a human and possess thick limbs and a vague head. As they move through bogs and undergrowth, they ensnare creatures that come within reach. Shambling mounds bury those they catch within their own forms as compost.",
+							"Strange circumstances might give rise to shambling mounds, transforming vegetation into hulks with rudimentary cunning. Such conditions include strikes from magical lightning, nature defending itself, or druidic curses. Roll on or choose a result from the Shambling Mound Cultivation table to inspire a shambling mound's origins and features.",
+							{
+								"type": "table",
+								"caption": "Shambling Mound Cultivation",
+								"colLabels": [
+									"1d6",
+									"The Shambling Mound Is..."
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Covered in vibrant alien or Feywild blooms."
+									],
+									[
+										"2",
+										"Hauling a rune-etched menhir in its torso."
+									],
+									[
+										"3",
+										"Infested with vermin or fungi."
+									],
+									[
+										"4",
+										"Made up of knotty vines entangling skeletons."
+									],
+									[
+										"5",
+										"Mutated and leaking glowing pollution."
+									],
+									[
+										"6",
+										"The remains of an ancient tree or a treant."
+									]
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Shambling Mound.webp"
+						}
+					}
+				]
+			},
+			"isNamedCreature": true,
+			"shortName": "the Mound",
+			"legendaryHeader": [
+				"Legendary Action Uses: 3. Immediately after another creature's turn, the Mound can expend a use to take one of the following actions. The Mound regains all expended uses at the start of each of their turns."
+			],
+			"legendary": [
+				{
+					"name": "Shambling Escape",
+					"entries": [
+						"The Mound retreats into the roots at the ceiling of the room, moves up to its speed without provoking opportunity attacks and reappears."
+					]
+				},
+				{
+					"name": "Poison Cloud (Costs 2 Actions)",
+					"entries": [
+						"The mound emits a cloud of poison around it. Each creature within 10 feet of the Mound must succeed on a {@dc 14} Constitution saving throw or be {@condition Poisoned|XPHB} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Corrosive Spit",
+					"entries": [
+						"The Mound shoots out a stream of corrosive, foul smelling liquid, that targets one nonmagical metal object—armor or a weapon—worn or carried by a creature within 10 feet of itself. {@actSave dex} {@dc 13}, the creature with the object. {@actSaveFail} The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor or weapon"
+					]
+				}
+			],
+			"skill": {
+				"stealth": "+3"
+			},
+			"damageTags": [
+				"A",
+				"B",
+				"I"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"uniqueId": "1945d0c2-68e8-41cf-b198-63e24333a0ab"
+		},
+		{
+			"name": "Young Owlbear",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 349,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bear makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"name": "Animals",
+						"entries": [
+							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://bg3.wiki/w/images/thumb/0/0d/Bert-vanhengel-bert-vanhengel-bg3-owlbear-02.jpg/534px-Bert-vanhengel-bert-vanhengel-bg3-owlbear-02.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "7e478124-4ea1-4358-815c-81367d91e91a",
+			"token": {
+				"name": "Owlbear",
+				"source": "XMM"
+			},
+			"damageTags": [
+				"S"
+			]
+		}
+	]
+}
