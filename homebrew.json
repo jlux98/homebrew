@@ -235,6 +235,107 @@
 			"uniqueId": "1945d0c2-68e8-41cf-b198-63e24333a0ab"
 		},
 		{
+			"name": "Spike, the Adolescent Owlbear",
+			"source": "HybrisHeapofHomebrew",
+			"page": 349,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Spike makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"level": 2,
+			"isNamedCreature": true,
+			"alias": [
+				"Spike"
+			],
+			"token": {
+				"name": "Owlbear",
+				"source": "XMM"
+			},
+			"save": {
+				"con": "+4"
+			},
+			"reaction": [
+				{
+					"name": "Defender",
+					"entries": [
+						"If a creature within 5 feet of Spike makes an Attack Roll whose target isn't Spike, he can impose disadvantage on that Attack Roll provided he can see the attacker."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Spike regains hit points equal to {@dice 1d10} + his level. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
 			"name": "Young Owlbear",
 			"source": "HybrisHeapOfHomebrew",
 			"page": 349,
