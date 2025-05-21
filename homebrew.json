@@ -15,6 +15,144 @@
 	},
 	"monster": [
 		{
+			"name": "Abel, die uralte Vampirbrut",
+			"source": "HybrisHeapofHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"Skirmisher"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"wis": "+2",
+				"cha": "+5"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"intimidation": "+5",
+				"perception": "+2",
+				"persuasion": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common und Undercommon"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Radiant Aversion",
+					"entries": [
+						"Each time Abel takes radiant damage, they take an extra 10 radiant damage."
+					]
+				},
+				{
+					"name": "Vampire Weakness (Vampire)",
+					"entries": [
+						"Abel has the following flaws:",
+						"{@i Forbiddance}. Abel can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Abel takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into abel's heart while abel is {@condition incapacitated} in its resting place, abel is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Abel takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Abel makes two Claw attacks. They can replace one attack with a Bite attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, and if the target is Large or smaller, they are {@condition grappled} (escape {@dc 13}). Moving while grappling a Medium or smaller creature doesn't halve Abel's speed. Abel can have only one target {@condition grappled} in this way at a time."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature who is {@condition grappled} by Abel, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by a number equal to the necrotic damage taken, and Abel regains hit points equal to that number. The reduction lasts until the target finishes a long rest or is targeted by a {@spell greater restoration} spell, or a similar supernatural effect. The target dies if this attack reduces their hit point maximum to 0."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Inhuman Speed",
+					"entries": [
+						"Abel takes the Dash or Disengage action."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"isNamedCreature": true,
+			"shortName": "Abel",
+			"legendary": [
+				{
+					"name": "Fluttering Dash",
+					"entries": [
+						"Abel transforms into a half-shaped bat form and moves up to half his speed without opportunity attacks."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"R",
+				"S"
+			]
+		},
+		{
 			"name": "Poisonous Shambling Mound",
 			"source": "HybrisHeapOfHomebrew",
 			"page": 276,
