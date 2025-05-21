@@ -332,5 +332,50 @@
 				"S"
 			]
 		}
+	],
+	"item": [
+		{
+			"name": "Bloodfang",
+			"source": "HybrisHeapOfHomebrew",
+			"baseItem": "dagger|XPHB",
+			"type": "m",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"hasFluffImages": true,
+			"recharge": "dusk",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
+				"This dagger has 4 charges and regains {@dice 1d4} expended charges daily at dusk. When you hit a creature that is willing or has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition with a melee attack using this weapon, you can expend one of its charges to deal an additional {@dice 2d4} Necrotic damage to it. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and you regain {@variantrule Hit Points|XPHB} equal to that amount."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "example.com"
+						}
+					}
+				]
+			}
+		}
 	]
 }
