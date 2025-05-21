@@ -358,6 +358,52 @@
 			"dagger": true,
 			"weapon": true,
 			"hasFluffImages": true,
+			"entries": [
+				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
+				{
+					"type": "entries",
+					"name": "Steel Bite",
+					"entries": [
+						"When you hit a creature with a melee attack using this weapon you can choose to deal an extra 1d4 necrotic damage. You then regain Hit Points equal to the damage dealt. You can't use this property again until you finish a long rest."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "example.com"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodfang (Legacy)",
+			"source": "HybrisHeapOfHomebrew",
+			"baseItem": "dagger|XPHB",
+			"type": "m",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"hasFluffImages": true,
 			"recharge": "dusk",
 			"rechargeAmount": "{@dice 1d4}",
 			"charges": 4,
