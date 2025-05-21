@@ -363,7 +363,14 @@
 			"charges": 4,
 			"entries": [
 				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
-				"This dagger has 4 charges and regains {@dice 1d4} expended charges daily at dusk. When you hit a creature that is willing or has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition with a melee attack using this weapon, you can expend one of its charges to deal an additional {@dice 2d4} Necrotic damage to it. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and you regain {@variantrule Hit Points|XPHB} equal to that amount."
+				{
+					"type": "entries",
+					"name": "Steel Bite",
+					"entries": [
+						"This dagger has 4 charges and regains {@dice 1d4} expended charges daily at dusk. Once per turn when you hit a creature with a melee attack using this weapon and the creature is willing or has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition, you can expend one of the dagger's charges to deal an additional {@dice 2d4} Necrotic damage to the creature.",
+						"The creature's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and you regain {@variantrule Hit Points|XPHB} equal to that amount. The reduction lasts until the creature finishes a long rest. The creature dies if its hit point maximum is reduced to 0."
+					]
+				}
 			],
 			"fluff": {
 				"images": [
