@@ -1,0 +1,12 @@
+{
+    "[yaml]": {
+          "editor.codeActionsOnSave": {
+        "source.runCommandsAsCodeActions.convertYAML": "always"
+      }
+    },
+    "[json]": {
+ "editor.codeActionsOnSave": {
+        "source.runCommandsAsCodeActions.convertJSON": "always"
+    }
+  },
+}
