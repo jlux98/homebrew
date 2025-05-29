@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "81cb4f92ee",
+		"_dateLastModifiedHash": "5254f3138f",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748548461
+		"dateLastModified": 1748551275
 	},
 	"monster": [
 		{
@@ -413,7 +413,7 @@
 				13
 			],
 			"hp": {
-				"formula": "5d8 + 10",
+				"formula": "6d8 + 12",
 				"average": 32
 			},
 			"speed": {
@@ -446,6 +446,15 @@
 					"name": "Rend",
 					"entries": [
 						"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Improved Critical",
+					"type": "entries",
+					"entries": [
+						"Spike's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
 					]
 				}
 			],
