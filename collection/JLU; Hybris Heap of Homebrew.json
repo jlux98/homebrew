@@ -12,9 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "3fbf693bfd",
+		"_dateLastModifiedHash": "81cb4f92ee",
+		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748548239
+		"dateLastModified": 1748548461
 	},
 	"monster": [
 		{
@@ -144,7 +145,6 @@
 				"HPR",
 				"RA"
 			],
-			"isNamedCreature": true,
 			"shortName": "Abel",
 			"legendary": [
 				{
@@ -264,10 +264,6 @@
 				"name": "Shambling Mound",
 				"source": "MM"
 			},
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/shambling-mound.mp3"
-			},
 			"traitTags": [
 				"Damage Absorption"
 			],
@@ -366,7 +362,6 @@
 					}
 				]
 			},
-			"isNamedCreature": true,
 			"shortName": "the Mound",
 			"legendaryHeader": [
 				"Legendary Action Uses: 3. Immediately after another creature's turn, the Mound can expend a use to take one of the following actions. The Mound regains all expended uses at the start of each of their turns."
@@ -401,8 +396,7 @@
 			],
 			"savingThrowForced": [
 				"constitution"
-			],
-			"uniqueId": "1945d0c2-68e8-41cf-b198-63e24333a0ab"
+			]
 		},
 		{
 			"name": "Spike, the Adolescent Owlbear",
@@ -458,10 +452,6 @@
 			"environment": [
 				"forest"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
-			},
 			"senseTags": [
 				"D"
 			],
@@ -559,10 +549,6 @@
 			"environment": [
 				"forest"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
-			},
 			"senseTags": [
 				"D"
 			],
@@ -594,7 +580,6 @@
 					}
 				]
 			},
-			"uniqueId": "7e478124-4ea1-4358-815c-81367d91e91a",
 			"token": {
 				"name": "Owlbear",
 				"source": "XMM"
@@ -737,7 +722,9 @@
 					]
 				}
 			],
-			"legendaryHeader": [],
+			"legendaryHeader": [
+				""
+			],
 			"conditionInflict": [
 				"paralyzed"
 			],
@@ -774,8 +761,6 @@
 			"range": "20/60",
 			"dmg1": "1d4",
 			"dmgType": "P",
-			"dagger": true,
-			"weapon": true,
 			"hasFluffImages": true,
 			"entries": [
 				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
@@ -793,7 +778,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "example.com"
+							"url": "https://example.com"
 						}
 					}
 				]
@@ -820,8 +805,6 @@
 			"range": "20/60",
 			"dmg1": "1d4",
 			"dmgType": "P",
-			"dagger": true,
-			"weapon": true,
 			"hasFluffImages": true,
 			"recharge": "dusk",
 			"rechargeAmount": "{@dice 1d4}",
@@ -843,7 +826,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "example.com"
+							"url": "https://example.com"
 						}
 					}
 				]
@@ -873,7 +856,7 @@
 				],
 				[
 					"4",
-					"{@b Zeug zwischen den Zähnen.} Zwischen einem Schneidezahn und einem Eckzahn in deinem Oberkiefer hat sich ein riesiges, unidentifizierbares Stück Dreck festgesetzt. Es ist grün-braun, jeder kann es sehen und egal, wie sehr du dich anstrengst, du bekommst es nicht herausgepopelt."
+					"{@b Zeug in den Zähnen.} Zwischen einem Schneidezahn und einem Eckzahn in deinem Oberkiefer hat sich ein riesiges, unidentifizierbares Stück Dreck festgesetzt. Es ist grün-braun, jeder kann es sehen und egal, wie sehr du dich anstrengst, du bekommst es nicht herausgepopelt."
 				],
 				[
 					"5",
