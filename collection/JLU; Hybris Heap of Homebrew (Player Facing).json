@@ -1,0 +1,186 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HybrisHeapOfHomebrewPlayerFacing",
+				"abbreviation": "HHHP",
+				"full": "Hybris' Heap of Homebrew (Player Facing)",
+				"version": "draft 1",
+				"authors": [
+					"Hybris",
+					"JLU"
+				]
+			}
+		],
+		"_dateLastModifiedHash": "95db78d2f0",
+		"edition": "one",
+		"dateAdded": 1748548039,
+		"dateLastModified": 1748706611
+	},
+	"monster": [
+		{
+			"name": "Spike, the Adolescent Owlbear",
+			"source": "HybrisHeapOfHomebrewPlayerFacing",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Spike makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Improved Critical",
+					"type": "entries",
+					"entries": [
+						"Spike's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"level": 3,
+			"isNamedCreature": true,
+			"alias": [
+				"Spike"
+			],
+			"token": {
+				"name": "Owlbear",
+				"source": "XMM"
+			},
+			"save": {
+				"con": "+4"
+			},
+			"reaction": [
+				{
+					"name": "Attack of Opportunity",
+					"entries": [
+						"If a creature within 5 feet of Spike makes a Ranged Attack or moves out of Spike's reach, he can make one Rend attack against the provoking creature. The attack occurs right before the creature leaves your reach."
+					]
+				},
+				{
+					"name": "Defender",
+					"entries": [
+						"If a creature within 5 feet of Spike makes an Attack Roll whose target isn't Spike, he can impose disadvantage on that Attack Roll provided he can see the attacker."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Spike regains hit points equal to {@dice 1d10} + his level. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Katastrophale Konsequenzen",
+			"source": "HybrisHeapOfHomebrewPlayerFacing",
+			"colLabels": [
+				"d10",
+				"Konsequenzen"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Furchtbare Flatulenzen.} In deinem Verdauungstrakt hat sich eine große Menge Gas angesammelt. Immer Mal wieder sucht sich ein Teil dieses Gases plötzlich und unerwartet seinen Weg nach draußen, begleitet von einem dröhnenden Geräusch und einem ätzenden Gestank."
+				],
+				[
+					"2",
+					"{@b Miese Maulfäule.} Aus deinem Mund wabert ein Gestank, als wäre ein kleines Tier deine Speiseröhre heruntergekrochen und dort verendet. Der Geruch würde selbst hartgesottenen Goblins die Tränen in die Augen treiben."
+				],
+				[
+					"3",
+					"{@b Flutschige Flossen.} Deine Handflächen sind permanent von einem dünnen Film aus Schweiß bedeckt. Sie fühlen sich kalt und klamm an, wenn du Gegenstände in den Händen hältst hast du ständig das Gefühl, sie würden dir gleich aus den Fingern gleiten und auf allem, was du berührst, hinterlässt du glänzende Schweißflecken."
+				],
+				[
+					"4",
+					"{@b Zeug in den Zähnen.} Zwischen einem Schneidezahn und einem Eckzahn in deinem Oberkiefer hat sich ein riesiges, unidentifizierbares Stück Dreck festgesetzt. Es ist grün-braun, jeder kann es sehen und egal, wie sehr du dich anstrengst, du bekommst es nicht herausgepopelt."
+				],
+				[
+					"5",
+					"{@b Krakelige Kopfbehaarung.} Deine Haare sind besonders drahtig und widerspenstig. Sie stehen in alle Richtungen ab, wiegen im Wind und schimmern vor Fett."
+				],
+				[
+					"6",
+					"{@b Schrecklicher Schluckauf.} Du wirst von einem ständigen, nicht enden wollenden Schluckauf geplagt. Beim Reden fällt er dir ins Wort, beim Essen und Trinken lässt er die Nahrung in den falschen Hals geraten und gerade wenn du denkst, dass du ihn endlich losgeworden bist, setzt er wieder ein."
+				],
+				[
+					"7",
+					"{@b Schaurige Schnodder.} Aus deinen Nasenlöchern fließt ein konstanter Strom von gelblichem Schleim. Du kannst spüren, wie er deine Oberlippe kitzelt, du kannst ihn schmecken, wenn du dir die Lippen leckst und egal wie oft du ihn wegwischst, es dauert nie lange bis er wieder da ist."
+				],
+				[
+					"8",
+					"{@b Verdächtiger Fleck.} Im Schritt deiner Hose befindet sich ein auffälliger, verkrusteter Fleck. Du kannst dich nicht erinnern, wie er dort hingekommen ist, aber bei allem schrubben und waschen bekommst du ihn nicht weg."
+				],
+				[
+					"9",
+					"{@b Abartiges Aroma.} Von deinem Körper steigt ein Gestank nach altem Schweiß, verfaulten Eiern und nassem Hund auf. {@i Sogar für Goblin-Verhältnisse} riechst du absolut abgarstig."
+				],
+				[
+					"10",
+					"{@b Räudiges Rauschen.} Du hast ein konstantes Rauschen in deinen Ohren, Mal lauter, Mal leiser, aber nie ganz weg. Du hast Probleme damit, Geräusche um dich herum wahrzunehmen und wenn du sprichst, dann musst du sehr laut reden, damit du dich selbst hörst."
+				]
+			],
+			"type": "table"
+		}
+	]
+}
