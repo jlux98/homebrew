@@ -1,0 +1,906 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HybrisHeapOfHomebrew",
+				"abbreviation": "HHH",
+				"full": "Hybris' Heap of Homebrew",
+				"version": "draft 1",
+				"authors": [
+					"Hybris",
+					"JLU"
+				]
+			}
+		],
+		"_dateLastModifiedHash": "f3d96c7406",
+		"dateAdded": 1748548039,
+		"dateLastModified": 1748548039
+	},
+	"monster": [
+		{
+			"name": "Abel, die uralte Vampirbrut",
+			"source": "HybrisHeapOfHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"Skirmisher"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"wis": "+2",
+				"cha": "+5"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"intimidation": "+5",
+				"perception": "+2",
+				"persuasion": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common und Undercommon"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Radiant Aversion",
+					"entries": [
+						"Each time Abel takes radiant damage, they take an extra 10 radiant damage."
+					]
+				},
+				{
+					"name": "Vampire Weakness (Vampire)",
+					"entries": [
+						"Abel has the following flaws:",
+						"{@i Forbiddance}. Abel can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Abel takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into abel's heart while abel is {@condition incapacitated} in its resting place, abel is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Abel takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Abel makes two Claw attacks. They can replace one attack with a Bite attack and one with a Vampiric Blast attack."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, and if the target is Large or smaller, they are {@condition grappled} (escape {@dc 13}). Moving while grappling a Medium or smaller creature doesn't halve Abel's speed. Abel can have only one target {@condition grappled} in this way at a time."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature who is {@condition grappled} by Abel, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by a number equal to the necrotic damage taken, and Abel regains hit points equal to that number. The reduction lasts until the target finishes a long rest or is targeted by a {@spell greater restoration} spell, or a similar supernatural effect. The target dies if this attack reduces their hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Vampiric Touch",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}5 ({@damage 2d4}) necrotic damage. On a hit, the target takes can't regain hit points until the start of your next turn. Until then, a skeletal hand clings to the target."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Inhuman Speed",
+					"entries": [
+						"Abel takes the Dash or Disengage action."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"HPR",
+				"RA"
+			],
+			"isNamedCreature": true,
+			"shortName": "Abel",
+			"legendary": [
+				{
+					"name": "Fluttering Dash",
+					"entries": [
+						"Abel transforms into a half-shaped bat form and moves up to his speed without provoking opportunity attacks, then he reverts to his regular form."
+					]
+				},
+				{
+					"name": "Echolocating Shriek",
+					"entries": [
+						"Abel transforms his head into a giant bat head and lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
+					]
+				},
+				{
+					"name": "Quick Claw",
+					"entries": [
+						"Abel makes a Claw attack against a target in range"
+					]
+				}
+			],
+			"conditionInflict": [
+				"dazed|fleemortals"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.postimg.cc/25d4196W/Abel.png"
+			},
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Poisonous Shambling Mound",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 276,
+			"size": [
+				"L"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 110,
+				"formula": "13d10 + 39"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"deafened",
+				"exhaustion"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Poison Absorption",
+					"entries": [
+						"Whenever the shambling mound is subjected to Poison damage, it regains a number of {@variantrule Hit Points|XPHB} equal to the Poison damage dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shambling mound makes three Poisonous Tendril attacks. It can replace one attack with a use of Engulf."
+					]
+				},
+				{
+					"name": "Poisonous Tendril",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 10 ft. {@h}7 ({@damage 1d6 + 4}) Bludgeoning damage plus 5 ({@damage 2d4}) Poison damage. If the target is a Medium or smaller creature, the shambling mound pulls the target 5 feet straight toward itself."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"{@actSave str} {@dc 15}, one Medium or smaller creature within 5 feet. {@actSaveFail} The target is pulled into the shambling mound's space and has the {@condition Grappled|XPHB} condition (escape {@dc 14}). Until the grapple ends, the target has the {@condition Blinded|XPHB} and {@condition Restrained|XPHB} conditions, and it takes 10 ({@damage 3d6}) Acid damage at the start of each of its turns. When the shambling mound moves, the {@condition Grappled|XPHB} target moves with it, costing it no extra movement. The shambling mound can have only one creature {@condition Grappled|XPHB} by this action at a time."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"token": {
+				"name": "Shambling Mound",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/shambling-mound.mp3"
+			},
+			"traitTags": [
+				"Damage Absorption"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA",
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Shambling Mound",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Shambling Mound",
+						"entries": [
+							"{@i Manifestation of Primeval Power}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Forest|bestiary|environment=forest}, {@filter Swamp|bestiary|environment=swamp}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "None"
+									}
+								]
+							},
+							"Shambling mounds\u2014also known as \"shamblers\"\u2014embody the tenacity of the wilderness, seeking only to consume and grow. These masses of vegetation rise up to half again as tall as a human and possess thick limbs and a vague head. As they move through bogs and undergrowth, they ensnare creatures that come within reach. Shambling mounds bury those they catch within their own forms as compost.",
+							"Strange circumstances might give rise to shambling mounds, transforming vegetation into hulks with rudimentary cunning. Such conditions include strikes from magical lightning, nature defending itself, or druidic curses. Roll on or choose a result from the Shambling Mound Cultivation table to inspire a shambling mound's origins and features.",
+							{
+								"type": "table",
+								"caption": "Shambling Mound Cultivation",
+								"colLabels": [
+									"1d6",
+									"The Shambling Mound Is..."
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Covered in vibrant alien or Feywild blooms."
+									],
+									[
+										"2",
+										"Hauling a rune-etched menhir in its torso."
+									],
+									[
+										"3",
+										"Infested with vermin or fungi."
+									],
+									[
+										"4",
+										"Made up of knotty vines entangling skeletons."
+									],
+									[
+										"5",
+										"Mutated and leaking glowing pollution."
+									],
+									[
+										"6",
+										"The remains of an ancient tree or a treant."
+									]
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Shambling Mound.webp"
+						}
+					}
+				]
+			},
+			"isNamedCreature": true,
+			"shortName": "the Mound",
+			"legendaryHeader": [
+				"Legendary Action Uses: 3. Immediately after another creature's turn, the Mound can expend a use to take one of the following actions. The Mound regains all expended uses at the start of each of their turns."
+			],
+			"legendary": [
+				{
+					"name": "Shambling Escape",
+					"entries": [
+						"The Mound retreats into the roots at the ceiling of the room, moves up to its speed without provoking opportunity attacks and reappears."
+					]
+				},
+				{
+					"name": "Poison Cloud (Costs 2 Actions)",
+					"entries": [
+						"The mound emits a cloud of poison around it. Each creature within 10 feet of the Mound must succeed on a {@dc 14} Constitution saving throw or be {@condition Poisoned|XPHB} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Corrosive Spit",
+					"entries": [
+						"The Mound shoots out a stream of corrosive, foul smelling liquid, that targets one nonmagical metal object\u2014armor or a weapon\u2014worn or carried by a creature within 10 feet of itself. {@actSave dex} {@dc 13}, the creature with the object. {@actSaveFail} The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the {@spell Mending|XPHB} spell on the armor or weapon"
+					]
+				}
+			],
+			"skill": {
+				"stealth": "+3"
+			},
+			"damageTags": [
+				"A",
+				"B",
+				"I"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"uniqueId": "1945d0c2-68e8-41cf-b198-63e24333a0ab"
+		},
+		{
+			"name": "Spike, the Adolescent Owlbear",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 349,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Spike makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}6 ({@damage 1d6 + 3}) Slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"level": 2,
+			"isNamedCreature": true,
+			"alias": [
+				"Spike"
+			],
+			"token": {
+				"name": "Owlbear",
+				"source": "XMM"
+			},
+			"save": {
+				"con": "+4"
+			},
+			"reaction": [
+				{
+					"name": "Defender",
+					"entries": [
+						"If a creature within 5 feet of Spike makes an Attack Roll whose target isn't Spike, he can impose disadvantage on that Attack Roll provided he can see the attacker."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Second Wind",
+					"entries": [
+						"Spike regains hit points equal to {@dice 1d10} + his level. Once he uses this feature, he must finish a short or long rest before he can use it again."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Young Owlbear",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 349,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bear makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-bear.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
+						"name": "Animals",
+						"entries": [
+							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://bg3.wiki/w/images/thumb/0/0d/Bert-vanhengel-bert-vanhengel-bg3-owlbear-02.jpg/534px-Bert-vanhengel-bert-vanhengel-bg3-owlbear-02.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "7e478124-4ea1-4358-815c-81367d91e91a",
+			"token": {
+				"name": "Owlbear",
+				"source": "XMM"
+			},
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Zombie Gnoll",
+			"source": "HybrisHeapOfHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"gnoll",
+					"Skirmisher",
+					"d8",
+					"d4"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item hide armor|PHB}"
+					],
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 14,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Understands Common",
+				"Abyssal and Gnoll but can't speak"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Rampaging Charge",
+					"entries": [
+						"If the marauder moves at least 10 feet straight toward a creature and hits them with a Flail attack on the same turn, the marauder can make a Bite attack against that target as a bonus action."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie gnoll to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie gnoll drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. {@actSave con} {@dc 10}. {@actSaveFail} The target has the {@condition Paralyzed|XPHB} condition until the end of its next turn."
+					]
+				},
+				{
+					"name": "Vile Bile",
+					"entries": [
+						"The Zombie Gnoll hurls a vomit projectile at a target it can see within 60ft.",
+						"The target must make a {@dc 12} Dexterity Saving Throw, taking 5 ({@dice 2d4}) acid damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"attachedItems": [
+				"flail|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"AB",
+				"CS",
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FleeMortals/token/Gnoll Marauder.png"
+			},
+			"foundryTokenScale": 1.5,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"save": {
+				"wis": "+0"
+			},
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"legendary": [
+				{
+					"name": "Shambling Gait",
+					"entries": [
+						"The Zombie Gnoll moves up to half its speed, then it makes a bite attack against a target in range."
+					]
+				},
+				{
+					"name": "Bile Spray",
+					"entries": [
+						"The Zombie Gnoll makes a Vile Bile attack."
+					]
+				}
+			],
+			"legendaryHeader": [],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Bloodfang",
+			"source": "HybrisHeapOfHomebrew",
+			"baseItem": "dagger|XPHB",
+			"type": "m",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"hasFluffImages": true,
+			"entries": [
+				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
+				{
+					"type": "entries",
+					"name": "Steel Bite",
+					"entries": [
+						"When you hit a creature with a melee attack using this weapon you can choose to deal an extra 1d4 necrotic damage. You then regain Hit Points equal to the damage dealt. You can't use this property again until you finish a long rest."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "example.com"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Bloodfang (Legacy)",
+			"source": "HybrisHeapOfHomebrew",
+			"baseItem": "dagger|XPHB",
+			"type": "m",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"hasFluffImages": true,
+			"recharge": "dusk",
+			"rechargeAmount": "{@dice 1d4}",
+			"charges": 4,
+			"entries": [
+				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
+				{
+					"type": "entries",
+					"name": "Steel Bite",
+					"entries": [
+						"This dagger has 4 charges and regains {@dice 1d4} expended charges daily at dusk. Once per turn when you hit a creature with a melee attack using this weapon and the creature is willing or has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition, you can expend one of the dagger's charges to deal an additional {@dice 2d4} Necrotic damage to the creature.",
+						"The creature's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and you regain {@variantrule Hit Points|XPHB} equal to that amount. The reduction lasts until the creature finishes a long rest. The creature dies if its hit point maximum is reduced to 0."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "example.com"
+						}
+					}
+				]
+			}
+		}
+	],
+	"table": [
+		{
+			"name": "Katastrophale Konsequenzen",
+			"source": "HybrisHeapOfHomebrew",
+			"colLabels": [
+				"d10",
+				"Konsequenzen"
+			],
+			"rows": [
+				[
+					"1",
+					"{@b Furchtbare Flatulenzen.} In deinem Verdauungstrakt hat sich eine große Menge Gas angesammelt. Immer Mal wieder sucht sich ein Teil dieses Gases plötzlich und unerwartet seinen Weg nach draußen, begleitet von einem dröhnenden Geräusch und einem ätzenden Gestank."
+				],
+				[
+					"2",
+					"{@b Miese Maulfäule.} Aus deinem Mund wabert ein Gestank, als wäre ein kleines Tier deine Speiseröhre heruntergekrochen und dort verendet. Der Geruch würde selbst hartgesottenen Goblins die Tränen in die Augen treiben."
+				],
+				[
+					"3",
+					"{@b Flutschige Flossen.} Deine Handflächen sind permanent von einem dünnen Film aus Schweiß bedeckt. Sie fühlen sich kalt und klamm an, wenn du Gegenstände in den Händen hältst hast du ständig das Gefühl, sie würden dir gleich aus den Fingern gleiten und auf allem, was du berührst, hinterlässt du glänzende Schweißflecken."
+				],
+				[
+					"4",
+					"{@b Zeug in den Zähnen.} Zwischen einem Schneidezahn und einem Eckzahn in deinem Oberkiefer hat sich ein riesiges, unidentifizierbares Stück Dreck festgesetzt. Es ist grün-braun, jeder kann es sehen und egal, wie sehr du dich anstrengst, du bekommst es nicht herausgepopelt."
+				],
+				[
+					"5",
+					"{@b Krakelige Kopfbehaarung.} Deine Haare sind besonders drahtig und widerspenstig. Sie stehen in alle Richtungen ab, wiegen im Wind und schimmern vor Fett."
+				],
+				[
+					"6",
+					"{@b Schrecklicher Schluckauf.} Du wirst von einem ständigen, nicht enden wollenden Schluckauf geplagt. Beim Reden fällt er dir ins Wort, beim Essen und Trinken lässt er die Nahrung in den falschen Hals geraten und gerade wenn du denkst, dass du ihn endlich losgeworden bist, setzt er wieder ein."
+				],
+				[
+					"7",
+					"{@b Schaurige Schnodder.} Aus deinen Nasenlöchern fließt ein konstanter Strom von gelblichem Schleim. Du kannst spüren, wie er deine Oberlippe kitzelt, du kannst ihn schmecken, wenn du dir die Lippen leckst und egal wie oft du ihn wegwischst, es dauert nie lange bis er wieder da ist."
+				],
+				[
+					"8",
+					"{@b Verdächtiger Fleck.} Im Schritt deiner Hose befindet sich ein auffälliger, verkrusteter Fleck. Du kannst dich nicht erinnern, wie er dort hingekommen ist, aber bei allem schrubben und waschen bekommst du ihn nicht weg."
+				],
+				[
+					"9",
+					"{@b Abartiges Aroma.} Von deinem Körper steigt ein Gestank nach altem Schweiß, verfaulten Eiern und nassem Hund auf. {@i Sogar für Goblin-Verhältnisse} riechst du absolut abgarstig."
+				],
+				[
+					"10",
+					"{@b Räudiges Rauschen.} Du hast ein konstantes Rauschen in deinen Ohren, Mal lauter, Mal leiser, aber nie ganz weg. Du hast Probleme damit, Geräusche um dich herum wahrzunehmen und wenn du sprichst, dann musst du sehr laut reden, damit du dich selbst hörst."
+				]
+			],
+			"type": "table"
+		}
+	]
+}
