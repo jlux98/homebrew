@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "95db78d2f0",
+		"_dateLastModifiedHash": "148373a0bf",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748706611
+		"dateLastModified": 1748706766
 	},
 	"monster": [
 		{
@@ -107,7 +107,7 @@
 				{
 					"name": "Attack of Opportunity",
 					"entries": [
-						"If a creature within 5 feet of Spike makes a Ranged Attack or moves out of Spike's reach, he can make one Rend attack against the provoking creature. The attack occurs right before the creature leaves your reach."
+						"If a creature within 5 feet of Spike makes a Ranged Attack or moves out of Spike's reach, he can make one Rend attack against the provoking creature. The attack occurs right before the creature makes the attack or leaves his reach."
 					]
 				},
 				{
