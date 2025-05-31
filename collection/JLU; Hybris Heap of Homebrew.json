@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "bc8c0f7bd6",
+		"_dateLastModifiedHash": "370fec0fb9",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748553051
+		"dateLastModified": 1748709161
 	},
 	"monster": [
 		{
@@ -84,16 +84,6 @@
 					"entries": [
 						"Each time Abel takes radiant damage, they take an extra 10 radiant damage."
 					]
-				},
-				{
-					"name": "Vampire Weakness (Vampire)",
-					"entries": [
-						"Abel has the following flaws:",
-						"{@i Forbiddance}. Abel can't enter a residence without an invitation from one of the occupants.",
-						"{@i Harmed by Running Water}. Abel takes 20 acid damage if it ends its turn in running water.",
-						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into abel's heart while abel is {@condition incapacitated} in its resting place, abel is {@condition paralyzed} until the stake is removed.",
-						"{@i Sunlight Hypersensitivity}. Abel takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
-					]
 				}
 			],
 			"action": [
@@ -106,7 +96,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, and if the target is Large or smaller, they are {@condition grappled} (escape {@dc 13}). Moving while grappling a Medium or smaller creature doesn't halve Abel's speed. Abel can have only one target {@condition grappled} in this way at a time."
+						"{@atk mw} {@hit 5} to hit, one target. {@h}10 ({@damage 2d6 + 3}) slashing, {@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature grappled at a time"
 					]
 				},
 				{
