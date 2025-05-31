@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "22c88f9d6d",
+		"_dateLastModifiedHash": "a015e63dba",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748709450
+		"dateLastModified": 1748711236
 	},
 	"monster": [
 		{
@@ -143,6 +143,7 @@
 				{
 					"name": "Heat Metal",
 					"entries": [
+						"",
 						"{@b Tell:} Abel produces a small flame in his hand and holds a small iron peg into the fire. He then starts chanting and the monstrance begins to glow.",
 						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can drop the monstrance so when it gets heated up nobody takes the damage.",
 						"{@b Resolution:} Abel casts {@spell heat metal} on the monstrance. Every creature touching it takes 9 ({@dice 2d8}) fire dmg. Every creature taking the damage and holding the monstrance must either let go of the monstrance or make a {@dc 13} Constitution Saving Throw to hold onto it. On a success they can keep their hold on it but have disadvantage on Attack Rolls and Ability Checks until the start of A.'s next turn"
@@ -151,6 +152,7 @@
 				{
 					"name": "Confusing Shriek",
 					"entries": [
+						"",
 						"{@b Tell:} Abel transforms his head into a giant bat head and begins to inhale.",
 						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can use the spell Silence to ensure Abel cannot shriek or plug their ears to ensure they can't hear him.",
 						"{@b Resolution:} Abel lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
