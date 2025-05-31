@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "2ad3df948b",
+		"_dateLastModifiedHash": "22c88f9d6d",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748709334
+		"dateLastModified": 1748709450
 	},
 	"monster": [
 		{
@@ -96,19 +96,22 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, one target. {@h}10 ({@damage 2d6 + 3}) slashing, {@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature grappled at a time."
+						"{@atk mw} {@hit 5} to hit, {@h}10 ({@damage 2d6 + 3}) slashing",
+						"{@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature grappled at a time."
 					]
 				},
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature who is {@condition grappled} by Abel, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by a number equal to the necrotic damage taken, and Abel regains hit points equal to that number. The reduction lasts until the target finishes a long rest or is targeted by a {@spell greater restoration} spell, or a similar supernatural effect. The target dies if this attack reduces their hit point maximum to 0."
+						"{@atk mw} {@hit 5} to hit, one creature who is {@condition grappled}, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing + 7 ({@damage 2d6}) necrotic",
+						"Target's HP max reduced by necr. dmg, Abel regains HP equal to necr. dmg. {@b Reduction} removed by end of long rest, {@spell greater restoration} spell or similar effect. {@b Target dies} if HP max goes to 0."
 					]
 				},
 				{
 					"name": "Vampiric Touch",
 					"entries": [
-						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}5 ({@damage 2d4}) necrotic damage. On a hit, the target takes can't regain hit points until the start of your next turn. Until then, a skeletal hand clings to the target."
+						"{@atk rs} {@hit 5} to hit, range 120 ft. {@h}5 ({@damage 2d4}) necrotic",
+						"Skeletal hand clings to target. Target can't regain HP until start of A.'s next turn."
 					]
 				}
 			],
@@ -138,15 +141,19 @@
 			"shortName": "Abel",
 			"legendary": [
 				{
-					"name": "Fluttering Dash",
+					"name": "Heat Metal",
 					"entries": [
-						"Abel transforms into a half-shaped bat form and moves up to his speed without provoking opportunity attacks, then he reverts to his regular form."
+						"{@b Tell:} Abel produces a small flame in his hand and holds a small iron peg into the fire. He then starts chanting and the monstrance begins to glow.",
+						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can drop the monstrance so when it gets heated up nobody takes the damage.",
+						"{@b Resolution:} Abel casts {@spell heat metal} on the monstrance. Every creature touching it takes 9 ({@dice 2d8}) fire dmg. Every creature taking the damage and holding the monstrance must either let go of the monstrance or make a {@dc 13} Constitution Saving Throw to hold onto it. On a success they can keep their hold on it but have disadvantage on Attack Rolls and Ability Checks until the start of A.'s next turn"
 					]
 				},
 				{
-					"name": "Echolocating Shriek",
+					"name": "Confusing Shriek",
 					"entries": [
-						"Abel transforms his head into a giant bat head and lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
+						"{@b Tell:} Abel transforms his head into a giant bat head and begins to inhale.",
+						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can use the spell Silence to ensure Abel cannot shriek or plug their ears to ensure they can't hear him.",
+						"{@b Resolution:} Abel lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
 					]
 				},
 				{
