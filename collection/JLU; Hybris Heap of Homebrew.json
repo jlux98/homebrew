@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "370fec0fb9",
+		"_dateLastModifiedHash": "2ad3df948b",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748709161
+		"dateLastModified": 1748709334
 	},
 	"monster": [
 		{
@@ -96,7 +96,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, one target. {@h}10 ({@damage 2d6 + 3}) slashing, {@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature grappled at a time"
+						"{@atk mw} {@hit 5} to hit, one target. {@h}10 ({@damage 2d6 + 3}) slashing, {@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature grappled at a time."
 					]
 				},
 				{
