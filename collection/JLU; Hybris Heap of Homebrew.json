@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "a015e63dba",
+		"_dateLastModifiedHash": "b1fe186a17",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748711236
+		"dateLastModified": 1748711369
 	},
 	"monster": [
 		{
@@ -117,9 +117,30 @@
 			],
 			"bonus": [
 				{
-					"name": "Inhuman Speed",
+					"name": "Confusing Shriek",
 					"entries": [
-						"Abel takes the Dash or Disengage action."
+						"",
+						"{@b Tell:} Abel transforms his head into a giant bat head and begins to inhale.",
+						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can use the spell Silence to ensure Abel cannot shriek or plug their ears to ensure they can't hear him.",
+						"{@b Resolution:} Abel lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
+					]
+				},
+				{
+					"name": "Volley of Claws",
+					"entries": [
+						"",
+						"{@b Tell:} Abel speaks an incantation and a cloud of spectral hands with long claws appear in a 5ft cylinder around him.",
+						"{@b Neutralization:} The players must leave the area around Abel.",
+						"{@b Resolution:} The spectral hands lash out at anyone in range. Every creature within 10ft of Abel that is not behind total cover is targeted with a {@b Claw} attack."
+					]
+				},
+				{
+					"name": "Heat Metal",
+					"entries": [
+						"",
+						"{@b Tell:} Abel produces a small flame in his hand and holds a small iron peg into the fire. He then starts chanting and the monstrance begins to glow.",
+						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can drop the monstrance so when it gets heated up nobody takes the damage.",
+						"{@b Resolution:} Abel casts {@spell heat metal} on the monstrance. Every creature touching it takes 9 ({@dice 2d8}) fire dmg. Every creature taking the damage and holding the monstrance must either let go of the monstrance or make a {@dc 13} Constitution Saving Throw to hold onto it. On a success they can keep their hold on it but have disadvantage on Attack Rolls and Ability Checks until the start of A.'s next turn"
 					]
 				}
 			],
@@ -141,25 +162,19 @@
 			"shortName": "Abel",
 			"legendary": [
 				{
-					"name": "Heat Metal",
+					"name": "Fluttering Dash",
 					"entries": [
-						"",
-						"{@b Tell:} Abel produces a small flame in his hand and holds a small iron peg into the fire. He then starts chanting and the monstrance begins to glow.",
-						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can drop the monstrance so when it gets heated up nobody takes the damage.",
-						"{@b Resolution:} Abel casts {@spell heat metal} on the monstrance. Every creature touching it takes 9 ({@dice 2d8}) fire dmg. Every creature taking the damage and holding the monstrance must either let go of the monstrance or make a {@dc 13} Constitution Saving Throw to hold onto it. On a success they can keep their hold on it but have disadvantage on Attack Rolls and Ability Checks until the start of A.'s next turn"
+						"Abel transforms into a half-shaped bat form and moves up to his speed without provoking opportunity attacks, then he reverts to his regular form."
 					]
 				},
 				{
-					"name": "Confusing Shriek",
+					"name": "Grabbing a Quick Bite",
 					"entries": [
-						"",
-						"{@b Tell:} Abel transforms his head into a giant bat head and begins to inhale.",
-						"{@b Neutralization:} The players must break Abel's Concentration on the transformation as one would break Concentration on a spell. Alternatively, the players can use the spell Silence to ensure Abel cannot shriek or plug their ears to ensure they can't hear him.",
-						"{@b Resolution:} Abel lets out a loud shriek. All creatures in a 30ft radius who can hear him must succeed on a {@dc 11} Constitution Saving Throw or become {@condition Dazed|fleemortals} (can only do one of the following things on their turn: move, use an action, or use a bonus action). If a creature fails the Saving Throw by 5 or more it also becomes {@condition Deafened|XPHB}."
+						"Abel makes a Claw attack against a target in range"
 					]
 				},
 				{
-					"name": "Quick Claw",
+					"name": "Speedy Snatch",
 					"entries": [
 						"Abel makes a Claw attack against a target in range"
 					]
