@@ -12,14 +12,14 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "b1fe186a17",
+		"_dateLastModifiedHash": "11421dcaf5",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748711369
+		"dateLastModified": 1749051680
 	},
 	"monster": [
 		{
-			"name": "Abel, die uralte Vampirbrut",
+			"name": "Abel, the ancient Vampire Spawn",
 			"source": "HybrisHeapOfHomebrew",
 			"size": [
 				"M"
@@ -196,6 +196,176 @@
 			],
 			"savingThrowForced": [
 				"constitution"
+			]
+		},
+		{
+			"name": "Abel, die uralte Vampirbrut",
+			"source": "HybrisHeapOfHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"Skirmisher"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|xphb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"wis": "+2",
+				"cha": "+5"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"intimidation": "+5",
+				"perception": "+2",
+				"persuasion": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common und Undercommon"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Anfällig für Radiant Damage",
+					"entries": [
+						"Jedes Mal, wenn Abel Radiant Damage nimmt, erleidet er zusätzlich 10 Radiant Damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Abel führt zwei Klauenangriffe aus. Er kann eine Attacke durch eine Biss-Attacke und eine durch eine Vampirischer-Strahl-Attacke ersetzen."
+					]
+				},
+				{
+					"name": "Klauen",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, {@h}10 ({@damage 2d6 + 3}) slashing",
+						"{@condition grappled|XPHB|Grappled} if target Large or smaller, (escape {@dc 13}), {@b Movement} not halved, {@b one} creature {@condition grappled} at a time."
+					]
+				},
+				{
+					"name": "Biss",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, one creature who is {@condition grappled}, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 3}) piercing + 7 ({@damage 2d6}) necrotic",
+						"Target's HP max reduced by necr. dmg, Abel regains HP equal to necr. dmg. {@b Reduction} removed by end of long rest, {@spell greater restoration} spell or similar effect. {@b Target dies} if HP max goes to 0."
+					]
+				},
+				{
+					"name": "Vampirischer Strahl",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft. {@h}5 ({@damage 2d4}) necrotic",
+						"Skeletal hand clings to target. Target can't regain HP until start of A.'s next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Betäubender Schrei",
+					"entries": [
+						"{@b Tell:} Abel verwandelt seinen Kopf in einen riesigen Fledermauskopf und beginnt zu inhalieren.",
+						"{@b Neutralisierung:} Die Spieler müssen Abels Konzentration auf die Verwandlung unterbrechen, wie man die Konzentration auf einen Zauberspruch unterbrechen würde. Alternativ können die Spieler den Zauber Silence verwenden, um sicherzustellen, dass Abel nicht schreien kann, oder sich die Ohren zuhalten, um sicherzustellen, dass sie ihn nicht hören können.",
+						"{@b Auflösung:} Abel stößt einen lauten Schrei aus. Alle Kreaturen in einem Umkreis von 30 Fuß, die ihn hören können, müssen einen {@dc 13} Wisdom Saving Throw bestehen oder sie werden {@condition dazed|fleemortals}. Wenn eine Kreatur den Rettungswurf um 5 oder mehr verfehlt, wird sie außerdem {@condition deafened|XPHB}."
+					]
+				},
+				{
+					"name": "Krallengewirr",
+					"entries": [
+						"{@b Tell:} Abel spricht eine Beschwörungsformel und eine Wolke aus gespenstischen Händen mit langen Klauen erscheint in einem 5-Fuß-Radius um ihn herum.",
+						"{@b Neutralisierung:} Die Spieler müssen den Bereich um Abel verlassen.",
+						"{@b Auflösung:} Die gespenstischen Hände greifen jeden in Reichweite an. Alle Kreaturen im Umkreis von 10ft um Abel, die sich nicht in völliger Deckung befinden, werden Ziel eines {@b Krallen}-Angriffs."
+					]
+				},
+				{
+					"name": "Metall Erhitzen",
+					"entries": [
+						"{@b Tell:} Abel erzeugt eine Flamme in seiner Hand und hält einen kleinen, eisernen Stift in das Feuer. Dann stimmt er einen rhythmischen Gesang an, und die Monstranz beginnt zu leuchten.",
+						"{@b Neutralisierung:} Die Spieler müssen Abels Konzentration auf die Verwandlung unterbrechen, so wie man die Konzentration auf einen Zauberspruch unterbrechen würde. Alternativ können die Spieler die Monstranz fallen lassen, sodass niemand den Schaden erleidet, wenn sie erhitzt wird.",
+						"{@b Auflösung:} Abel wirkt den Zauber {@spell heat metal} auf die Monstranz. Jede Kreatur, die sie berührt, erleidet 9 ({@dice 2d8}) Feuerschaden. Jede Kreatur, die diesen Schaden erleidet und die Monstranz hält, muss entweder die Monstranz loslassen oder einen {@dc 13} Constitution Saving Throw machen, um sie festzuhalten. Bei einem Erfolg können sie die Monstranz festhalten, haben aber bis zum Beginn von A.s nächster Runde einen Nachteil bei Angriffswürfen und Skill Checks."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"RA"
+			],
+			"shortName": "Abel",
+			"legendary": [
+				{
+					"name": "Flatterhafter Sprint",
+					"entries": [
+						"Abel verwandelt sich in eine riesige, missgestaltete Fledermaus und bewegt sich bis zu seinem Speed ohne Opportunity Attacks zu provozieren."
+					]
+				},
+				{
+					"name": "Ein schneller Happen",
+					"entries": [
+						"Abel führt einen Biss-Angriff gegen ein Ziel in Reichweite aus"
+					]
+				},
+				{
+					"name": "Schneller Griff",
+					"entries": [
+						"Abel führt einen Klauen-Angriff gegen ein Ziel in Reichweite aus"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.postimg.cc/25d4196W/Abel.png"
+			},
+			"damageTags": [
+				"R"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			]
 		},
 		{
