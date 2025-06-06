@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "11421dcaf5",
+		"_dateLastModifiedHash": "2503540602",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1749051680
+		"dateLastModified": 1749145029
 	},
 	"monster": [
 		{
@@ -366,6 +366,145 @@
 			"savingThrowForced": [
 				"constitution",
 				"wisdom"
+			]
+		},
+		{
+			"name": "Giant Poisonous Wasp",
+			"source": "HybrisHeapOfHomebrew",
+			"page": 361,
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"passive": 10,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The wasp doesn't provoke an Opportunity Attack when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Sting (Dmg Rider)",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 5 ({@damage 2d4}) Poison damage."
+					]
+				},
+				{
+					"name": "Sting (Condition Rider)",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Sting (Damage & Condition Rider)",
+					"entries": [
+						"{@atkr m} {@hit 4}, reach 5 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage plus 5 ({@damage 2d4}) Poison damage. The target must succeed on a Constitution saving throw with the DC being equal to 5 + Poinson Damage Taken or be {@condition poisoned} for 1 minute. Until this poison ends, the target is {@condition paralyzed}. The target can repeat the saving throw with a DC of 10 at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-wasp.mp3"
+			},
+			"traitTags": [
+				"Flyby"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Giant Wasp",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Giant Wasp",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Animals",
+						"entries": [
+							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Giant Wasp.webp"
+						},
+						"title": "A gnome rogue distracts a hive of giant wasps while Sheila the thief sneaks by",
+						"credit": "Dario Jelusic"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
+						},
+						"title": "A druid calls on animals of the hills and mountains to aid her cause"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Aquatic.webp"
+						},
+						"title": "Aquatic animals swim alongside a druid exploring the sea"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Rainforest.webp"
+						},
+						"title": "Inhabitants of the rain forest answer a druid's summons"
+					}
+				]
+			},
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		},
 		{
