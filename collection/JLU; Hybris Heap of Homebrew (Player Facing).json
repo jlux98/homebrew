@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "148373a0bf",
+		"_dateLastModifiedHash": "0de6b59ecb",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1748706766
+		"dateLastModified": 1748708168
 	},
 	"monster": [
 		{
@@ -127,6 +127,41 @@
 			],
 			"damageTags": [
 				"S"
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Bloodfang",
+			"source": "HybrisHeapOfHomebrewPlayerFacing",
+			"baseItem": "dagger|XPHB",
+			"type": "m",
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"Nick|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"hasFluffImages": true,
+			"entries": [
+				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
+				{
+					"type": "entries",
+					"name": "Steel Bite",
+					"entries": [
+						"When you hit a creature with a melee attack using this weapon you can choose to deal an extra 1d4 necrotic damage. You then regain Hit Points equal to the damage dealt. You can't use this property again until you finish a long rest."
+					]
+				}
 			]
 		}
 	],
