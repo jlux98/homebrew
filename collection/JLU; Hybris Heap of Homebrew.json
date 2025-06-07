@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "2503540602",
+		"_dateLastModifiedHash": "a41f662f06",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1749145029
+		"dateLastModified": 1749229585
 	},
 	"monster": [
 		{
@@ -187,6 +187,236 @@
 				"type": "external",
 				"url": "https://i.postimg.cc/25d4196W/Abel.png"
 			},
+			"damageTags": [
+				"A",
+				"N",
+				"P",
+				"R",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Abel, Young Vampire",
+			"source": "HybrisHeapOfHomebrew",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 40
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"dex": "+6",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"necrotic"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Charm {@recharge 5}",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Abel casts {@spell Charm Person|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}), and the duration is 24 hours. The Charmed target is a willing recipient of Abel's Bite, the damage of which doesn't end the spell. When the spell ends, the target is unaware it was Charmed by Abel."
+					],
+					"recharge": {
+						"5": [
+							"{@spell Charm Person|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "bonus",
+					"hidden": [
+						"recharge"
+					]
+				},
+				{
+					"name": "Beguile",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Abel casts {@spell Command|XPHB}, requiring no spell components and using Charisma as the spellcasting ability (spell save {@dc 17}). Abel can't take this action again until the start of his next turn."
+					],
+					"legendary": {
+						"1": [
+							"{@spell Command|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "legendary",
+					"hidden": [
+						"legendary"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"Abel can climb difficult surfaces, including along ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weakness",
+					"entries": [
+						"The vampire has these weaknesses:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Forbiddance",
+									"entries": [
+										"The vampire can't enter a residence without an invitation from an occupant."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Running Water",
+									"entries": [
+										"The vampire takes 20 Acid damage if it ends its turn in running water."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Stake to the Heart",
+									"entries": [
+										"The vampire is destroyed if a weapon that deals Piercing damage is driven into the vampire's heart while the vampire has the {@condition Incapacitated|XPHB} condition."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Sunlight",
+									"entries": [
+										"The vampire takes 20 Radiant damage if it starts its turn in sunlight. While in sunlight, it has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day, or 4/Day in Lair)",
+					"entries": [
+						"If Abel fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"If Abel drops to 0 {@variantrule Hit Points|XPHB} outside his resting place, Abel uses Shape-Shift to become mist (no action required). If he can't use Shape-Shift, he is destroyed.",
+						"While he has 0 {@variantrule Hit Points|XPHB} in mist form, he can't return to his vampire form, and he must reach his resting place within 2 hours or be destroyed. Once in his resting place, he returns to his vampire form and has the {@condition Paralyzed|XPHB} condition until he regains any {@variantrule Hit Points|XPHB}, and he regains 1 {@variantrule Hit Points|XPHB|Hit Point} after spending 1 hour there."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two Claw attacks and uses Bite."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atkr m} {@hit 6}, reach 5 ft. {@h}8 ({@damage 2d4 + 3}) Slashing damage. If the target is a Medium or smaller creature, it has the {@condition Grappled|XPHB} condition (escape {@dc 13}) from one of two claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@actSave con} {@dc 14}, one creature within 5 feet that is willing or that has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition. {@actSaveFail} 5 ({@damage 1d4 + 3}) Piercing damage plus 10 ({@damage 3d6}) Necrotic damage. The target's {@variantrule Hit Points|XPHB|Hit Point} maximum decreases by an amount equal to the Necrotic damage taken, and the vampire regains {@variantrule Hit Points|XPHB} equal to that amount."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shape-Shift",
+					"entries": [
+						"If Abel isn't in sunlight or running water, he shape-shifts into a Tiny bat ({@variantrule Speed|XPHB} 5 ft., {@variantrule Fly Speed|XPHB} 30 ft.) or a Medium cloud of mist ({@variantrule Speed|XPHB} 5 ft., {@variantrule Fly Speed|XPHB} 20 ft. [hover]), or he returns to his vampire form. Anything he is wearing transforms with him.",
+						"While in bat form, Abel can't speak. His game statistics, other than his size and {@variantrule Speed|XPHB}, are unchanged.",
+						"While in mist form, Abel can't take any actions, speak, or manipulate objects. he is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has {@variantrule Resistance|XPHB} to all damage, except the damage it takes from sunlight."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"treasure": [
+				"any"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"conditionInflict": [
+				"grappled",
+				"incapacitated",
+				"paralyzed"
+			],
+			"shortName": "Abel",
+			"legendaryActionsLair": 4,
+			"isNamedCreature": true,
+			"legendaryGroup": {
+				"name": "Vampire",
+				"source": "MM"
+			},
+			"legendary": [
+				{
+					"name": "Deathless Strike",
+					"entries": [
+						"Abel moves up to half his {@variantrule Speed|XPHB}, and he makes one Claw attack."
+					]
+				}
+			],
 			"damageTags": [
 				"A",
 				"N",
@@ -431,10 +661,6 @@
 				"grassland",
 				"urban"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/giant-wasp.mp3"
-			},
 			"traitTags": [
 				"Flyby"
 			],
@@ -873,50 +1099,6 @@
 		}
 	],
 	"item": [
-		{
-			"name": "Bloodfang",
-			"source": "HybrisHeapOfHomebrew",
-			"baseItem": "dagger|XPHB",
-			"type": "m",
-			"rarity": "uncommon",
-			"reqAttune": true,
-			"weight": 1,
-			"value": 200,
-			"weaponCategory": "simple",
-			"property": [
-				"F|XPHB",
-				"L|XPHB",
-				"T|XPHB"
-			],
-			"mastery": [
-				"Nick|XPHB"
-			],
-			"range": "20/60",
-			"dmg1": "1d4",
-			"dmgType": "P",
-			"hasFluffImages": true,
-			"entries": [
-				"This dagger's execeptionally long and slender blade is fashioned to look like a wicked, curved fang. It has no hilt and its grip is wrapped with shiny red leather straps, showing no sign of age or decay.",
-				{
-					"type": "entries",
-					"name": "Steel Bite",
-					"entries": [
-						"When you hit a creature with a melee attack using this weapon you can choose to deal an extra 1d4 necrotic damage. You then regain Hit Points equal to the damage dealt. You can't use this property again until you finish a long rest."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://example.com"
-						}
-					}
-				]
-			}
-		},
 		{
 			"name": "Bloodfang (Legacy)",
 			"source": "HybrisHeapOfHomebrew",
