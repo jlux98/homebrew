@@ -12,10 +12,10 @@
 				]
 			}
 		],
-		"_dateLastModifiedHash": "a41f662f06",
+		"_dateLastModifiedHash": "cb238a86c6",
 		"edition": "one",
 		"dateAdded": 1748548039,
-		"dateLastModified": 1749229585
+		"dateLastModified": 1749295384
 	},
 	"monster": [
 		{
@@ -1144,6 +1144,23 @@
 							"url": "https://example.com"
 						}
 					}
+				]
+			}
+		},
+		{
+			"name": "Druckzerstäuber-Aufsatz",
+			"source": "HybrisHeapOfHomebrew",
+			"type": "G|XPHB",
+			"rarity": "none",
+			"weight": 1,
+			"entries": [
+				"Dieser Druckzerstäuber-Aufsatz kann mit einer {@action Utilize |XPHB}-Action auf eine Metallflasche mit passendem Gewinde festgeschraubt werden.",
+				"Als eine Action kann ein Charakter den auf einer Flasche montierten Druckzerstäuber aufpumpen und die Flasche auf einen maximal 30ft entfernten Punkt werfen. Beim Aufprall versprüht der Druckzerstäuber den Inhalt der Flasche in einem 10ft Umkreis. Alle Charaktere, die sich zum Zeitpunkt des Versprühens in diesem Umkreis aufhalten und atmen, inhalieren den zerstäubten Flascheninhalt.",
+				"Wenn du die Flasche mit dem Druckzerstäuber-Aufsatz wirfst, dann würfel einen D20. Bei einem Ergebnis von 3 oder niedriger ist der Zerstäuber beim Aufprall verkantet. Er versprüht trotzdem noch den Inhalt der Flasche, kann aber erst wieder aufgepumpt werden, wenn er von jemandem mit {@item Tinker's Tools |XPHB}-Proficiency repariert wurde."
+			],
+			"containerCapacity": {
+				"volume": [
+					0.02
 				]
 			}
 		}
